@@ -1,0 +1,29 @@
+---
+output: html_document
+resource_files:
+- renv.lock
+- pipelines/climate_daily.R
+- pipelines/climate_hourly.R
+- pipelines/hydrometric.R
+---
+```{r}
+library(maestro)
+library(pins)
+
+source("R/pin_append.R")
+
+board <- board_connect()
+
+schedule <- build_schedule()
+
+status <- run_schedule(
+  schedule,
+  orch_frequency = "20 minutes",
+  resources = list(
+    board = board
+  )
+)
+
+last_run_errors()
+last_run_warnings()
+```

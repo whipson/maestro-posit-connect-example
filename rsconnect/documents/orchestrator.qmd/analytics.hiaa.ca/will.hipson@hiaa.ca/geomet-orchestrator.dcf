@@ -1,0 +1,14 @@
+name: geomet-orchestrator
+title: geomet-orchestrator
+username: will.hipson@hiaa.ca
+account: will.hipson@hiaa.ca
+server: analytics.hiaa.ca
+hostUrl: https://analytics.hiaa.ca/__api__
+appId: 245
+bundleId: 19656
+url: https://analytics.hiaa.ca/content/837682f4-237d-4978-ba27-19ecf7824e11/
+version: 1
+quarto_version: 1.4.549
+quarto_engines: knitr
+asMultiple: FALSE
+asStatic: FALSE
